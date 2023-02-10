@@ -27,7 +27,7 @@ console.log(galleryEl);
 const imgEl = images.reduce(
   (acc, index) =>
     acc +
-    `<li><img src ="${index.url}" alt ="${index.alt}" width = "150" height = "100"></li>`,
+    `<li><img src ="${index.url}" alt ="${index.alt}" width = "300" height = "230"></li>`,
   ""
 );
 
