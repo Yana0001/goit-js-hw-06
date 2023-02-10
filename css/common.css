@@ -4,8 +4,8 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
@@ -18,7 +18,95 @@ input {
   font: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   padding: 8px 12px;
   cursor: pointer;
+}
+
+.tasks-list {
+  list-style: none;
+  padding: 0;
+}
+.tasks-list li {
+  font-family: "Trebuchet MS", "Lucida Sans";
+  padding: 7px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-left: 25px solid #f1c3ff;
+  box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, 0.1),
+    -2px -2px 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1),
+    -2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: 0.3s all linear;
+}
+.tasks-list li:nth-child(2) {
+  border-color: #e391fc;
+}
+.tasks-list li:nth-child(3) {
+  border-color: #d25af7;
+}
+.tasks-list li:nth-child(4) {
+  border-color: #8f0fb6;
+}
+.tasks-list li:nth-child(5) {
+  border-color: #5d1274;
+}
+.tasks-list li:nth-child(6) {
+  border-color: #5d1274;
+}
+.tasks-list li:nth-child(7) {
+  border-color: #8f0fb6;
+}
+.tasks-list li:nth-child(8) {
+  border-color: #d25af7;
+}
+.tasks-list li:nth-child(9) {
+  border-color: #e391fc;
+}
+.tasks-list li:nth-child(10) {
+  border-color: #f1c3ff;
+}
+
+.tasks-list li:hover {
+  background-color: rgb(234, 232, 234);
+  border-left: 25px solid transparent;
+}
+.tasks-list li:nth-child(1):hover {
+  border-right: 35px solid hsl(263, 100%, 93%);
+}
+.tasks-list li:nth-child(2):hover {
+  border-right: 35px solid #e391fc;
+}
+.tasks-list li:nth-child(3):hover {
+  border-right: 35px solid #d25af7;
+}
+.tasks-list li:nth-child(4):hover {
+  border-right: 35px solid #8f0fb6;
+}
+.tasks-list li:nth-child(5):hover {
+  border-right: 35px solid #5d1274;
+}
+.tasks-list li:nth-child(6):hover {
+  border-right: 35px solid #5d1274;
+}
+.tasks-list li:nth-child(7):hover {
+  border-right: 35px solid #8f0fb6;
+}
+.tasks-list li:nth-child(8):hover {
+  border-right: 35px solid #d25af7;
+}
+.tasks-list li:nth-child(9):hover {
+  border-right: 35px solid #e391fc;
+}
+.tasks-list li:nth-child(10):hover {
+  border-right: 35px solid #f1c3ff;
+}
+
+.tasks-list__link {
+  color: #212121;
 }
