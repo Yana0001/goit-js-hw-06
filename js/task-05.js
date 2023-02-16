@@ -3,13 +3,10 @@
 // <input type="text" id="name-input" placeholder="Please enter your name" />
 // <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
 
-const textInput = document.querySelector("#name-input");
-const output = document.querySelector("#name-output");
+const inputEl = document.getElementById("name-input");
+const outputEl = document.getElementById("name-output");
+const placeholder = (event) => {
+  outputEl.textContent = event.currentTarget.value || "Anonymous";
+};
 
-textInput.addEventListener("input", (event) => {
-  output.textContent = event.target.value;
-
-  if (event.target.value === "") {
-    output.textContent = "Anonymous";
-  }
-});
+inputEl.addEventListener("input", placeholder);
